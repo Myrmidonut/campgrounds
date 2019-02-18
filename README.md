@@ -14,8 +14,7 @@ https://agile-caverns-31769.herokuapp.com/
 
 ## Behind the scenes
 ### Frontend:
-* HTML5
-* CSS3
+* Bootstrap
 
 ### Backend:
 * Node
