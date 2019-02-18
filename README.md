@@ -1,8 +1,9 @@
 # Yelp Camp
 
 ## Introduction
-Advertise campsites around the world!  
-Visitors can see pictures and price information and add comments of their own.
+Review campsites around the world with a picture, price per night and a fitting description!
+  
+Or comment on other users campsites with your own impressions!
 
 ***
 
