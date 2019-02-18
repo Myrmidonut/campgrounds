@@ -1,15 +1,15 @@
-var Campground = require("../models/campground");
-var Comment = require("../models/comment");
+const Campground = require("../models/campground");
+const Comment    = require("../models/comment");
 
 // all middleware:
-var middlewareObj = {};
+let middlewareObj = {};
 
 // check if user is logged in and has permission:
-middlewareObj.checkCampgroundOwnership = function(req, res, next) {
+middlewareObj.checkCampgroundOwnership = (req, res, next) => {
   // is user logged in?
   if (req.isAuthenticated()) {
     // find campground by ID:
-    Campground.findById(req.params.id, function(err, foundCampground) {
+    Campground.findById(req.params.id, (err, foundCampground) => {
       if (err) {
         req.flash("error", "Campground not found!");
         res.redirect("back");
@@ -30,11 +30,11 @@ middlewareObj.checkCampgroundOwnership = function(req, res, next) {
 }
 
 // check if user is logged in and has permission:
-middlewareObj.checkCommentOwnership = function(req, res, next) {
+middlewareObj.checkCommentOwnership = (req, res, next) => {
   // is user logged in?
   if (req.isAuthenticated()) {
     // find comment by ID:
-    Comment.findById(req.params.comment_id, function(err, foundComment) {
+    Comment.findById(req.params.comment_id, (err, foundComment) => {
       if (err) {
         res.redirect("back");
       } else {
@@ -54,7 +54,7 @@ middlewareObj.checkCommentOwnership = function(req, res, next) {
 }
 
 // check if user is logged in, middleware:
-middlewareObj.isLoggedIn = function(req, res, next) {
+middlewareObj.isLoggedIn = (req, res, next) => {
   if (req.isAuthenticated()) {
     return next();
   }
