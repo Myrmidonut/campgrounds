@@ -13,6 +13,8 @@ var express         = require("express"),
 
 require("dotenv").config()
 
+const port = process.env.PORT || 3000;
+
 // requiring routes:
 var commentRoutes    = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
@@ -57,6 +59,4 @@ app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
 
 // server:
-app.listen(3000, function() {
-  console.log("Server started.");
-});
+app.listen(port, () => console.log(`Server running on port ${port}!`))
