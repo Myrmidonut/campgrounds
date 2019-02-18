@@ -1,9 +1,11 @@
-# Yelp Camp
+# Campgrounds
 
 ## Introduction
-Review campsites around the world with a picture, price per night and a fitting description!
-  
-Or comment on other users campsites with your own impressions!
+Read reviews of campsites from around the world or write your own ones!
+
+Simply pick a picture, add the price per night and summarize your experience with a fitting description.
+
+Browse the comments on campsites and add your own!
 
 ***
 
