@@ -21,3 +21,7 @@
 input {
   margin: 10px;
 }
+
+body {
+  padding-top: 56px;
+}
