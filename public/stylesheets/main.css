@@ -40,3 +40,10 @@ body {
 .well {
   padding: 9px;
 }
+
+.well .row {
+  border-radius: 3px;
+  padding: 10px;
+  background: lightgray;
+  margin-bottom: 10px;
+}
