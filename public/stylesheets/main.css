@@ -36,3 +36,7 @@ body {
     font-size: 2.0rem;
   }
 }
+
+.well {
+  padding: 9px;
+}
