@@ -34,5 +34,8 @@ https://agile-caverns-31769.herokuapp.com/
 ***
 
 ## Preview Images
-### Main Screen:
-![Main]()
+### Main View:
+![Main](readme_images/campgrounds-1.png)
+
+### Campground Details
+![Campground Details](readme_images/campgrounds-2.png)
