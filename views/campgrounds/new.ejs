@@ -7,16 +7,16 @@
 
     <form action="/campgrounds" method="POST">
       <div class="form-group">
-        <input class="form-control" type="text" placeholder="Name" name="name">
+        <input class="form-control" type="text" placeholder="Name" name="name" required>
       </div>
       <div class="form-group">
-        <input class="form-control" type="number" placeholder="Price per night" name="price" min="0.01" step="0.01">
+        <input class="form-control" type="number" placeholder="Price per night" name="price" min="0.01" step="0.01" required>
       </div>
       <div class="form-group">
-        <input class="form-control" type="text" placeholder="Image link" name="image">
+        <input class="form-control" type="text" placeholder="Image link" name="image" required>
       </div>
       <div class="form-group">
-        <input class="form-control" type="text" placeholder="Description" name="description">
+        <input class="form-control" type="text" placeholder="Description" name="description" required>
       </div>
       <div class="form-group">
         <input type="submit" value="Submit!" class="btn btn-l btn-primary btn-block">
