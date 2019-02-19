@@ -6,6 +6,7 @@ const express       = require("express"),
     passport        = require("passport"),
     localStrategy   = require("passport-local"),
     methodOverride  = require("method-override"),
+    sanitizer       = require("express-sanitizer"),
     Campground      = require("./models/campground"),
     Comment         = require("./models/comment"),
     User            = require("./models/user"),
@@ -24,6 +25,7 @@ const commentRoutes    = require("./routes/comments"),
 mongoose.connect(process.env.DB, { useNewUrlParser: true });
 
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(sanitizer());
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));

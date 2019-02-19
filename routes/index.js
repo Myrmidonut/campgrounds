@@ -1,7 +1,10 @@
-const express  = require("express");
-const router   = express.Router();
-const passport = require("passport");
-const User     = require("../models/user");
+const express   = require("express");
+const router    = express.Router();
+const passport  = require("passport");
+const User      = require("../models/user");
+const sanitizer = require("express-sanitizer")
+
+//app.use(sanitizer());
 
 // ============== ROOT ROUTE ==============================
 
@@ -18,9 +21,9 @@ router.get("/register", (req, res) => {
 
 // handle sign up logic:
 router.post("/register", (req, res) => {
-  const newUser = new User({username: req.body.username});
+  const newUser = new User({username: req.sanitize(req.body.username)});
 
-  User.register(newUser, req.body.password, (err, user) => {
+  User.register(newUser, req.sanitize(req.body.password), (err, user) => {
     if (err) {
       req.flash("error", err.message);
       return res.redirect("/register");
