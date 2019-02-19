@@ -22,11 +22,11 @@
   margin: 10px;
 }
 
-.new h1, .edit h1 {
+.container-heading {
   text-align: center;
 }
 
-.new .new-form, .edit .edit-form {
+.container-form {
   max-width: 300px;
   margin: 25px auto;
 }

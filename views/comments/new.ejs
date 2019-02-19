@@ -1,9 +1,9 @@
 <% include ../partials/header %>
 
-<div class="container new">
-  <h1>Add new comment to <%= campground.name %></h1>
+<div class="container">
+  <h1 class="container-heading">Add new comment to <%= campground.name %></h1>
 
-  <div class="new-form">
+  <div class="container-form">
 
     <form action="/campgrounds/<%= campground._id %>/comments" method="POST">
       <div class="form-group">
