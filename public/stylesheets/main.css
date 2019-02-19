@@ -25,3 +25,9 @@ input {
 body {
   padding-top: 56px;
 }
+
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 2.0rem;
+  }
+}
