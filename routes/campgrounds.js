@@ -39,7 +39,7 @@ router.post("/", middleware.isLoggedIn, (req, res) => {
     if (err) {
       console.log(err);
     } else {
-      res.redirect("/campgrounds");
+      res.redirect(`/campgrounds/${newlyCreated._id}`);
     }
   });
 });
