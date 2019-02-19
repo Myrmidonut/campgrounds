@@ -30,7 +30,7 @@ router.post("/register", (req, res) => {
     }
     
     passport.authenticate("local")(req, res, () => {
-      req.flash("success", "Welcome to YelpCamp " + user.username);
+      req.flash("success", "Welcome to Campgrounds, " + user.username);
       res.redirect("/campgrounds");
     });
   });
@@ -43,13 +43,13 @@ router.get("/login", (req, res) => {
 
 // handle login logic:
 // app.post("/login", middleware, callback)
-router.post("/login", passport.authenticate("local",
-  {
-    successRedirect: "/campgrounds",
-    failureRedirect: "/login"
-  }
-  ), (req, res) => {}
-  );
+router.post("/login", passport.authenticate("local", {
+  failureFlash: "Username or Password wrong!",
+  failureRedirect: "/login"
+}), (req, res) => {
+  req.flash("success", "You are logged in!");
+  res.redirect("/campgrounds");
+});
 
 // logout route:
 router.get("/logout", (req, res) => {
