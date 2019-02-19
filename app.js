@@ -21,7 +21,7 @@ const commentRoutes    = require("./routes/comments"),
       indexRoutes      = require("./routes/index");
 
 // mongoose:
-mongoose.connect(process.env.DB);
+mongoose.connect(process.env.DB, { useNewUrlParser: true });
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");

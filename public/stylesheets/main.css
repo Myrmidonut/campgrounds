@@ -18,8 +18,17 @@
   margin-top: 20px;
 }
 
-input {
+.login input {
   margin: 10px;
+}
+
+.new h1 {
+  text-align: center;
+}
+
+.new .new-form {
+  max-width: 300px;
+  margin: 25px auto;
 }
 
 body {
