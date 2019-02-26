@@ -1,16 +1,14 @@
-const express       = require("express"),
-    app             = express(),
-    bodyParser      = require("body-parser"),
-    mongoose        = require("mongoose"),
-    flash           = require("connect-flash"),
-    passport        = require("passport"),
-    localStrategy   = require("passport-local"),
-    methodOverride  = require("method-override"),
-    sanitizer       = require("express-sanitizer"),
-    Campground      = require("./models/campground"),
-    Comment         = require("./models/comment"),
-    User            = require("./models/user"),
-    seedDB          = require("./seeds");
+const express         = require("express"),
+      app             = express(),
+      bodyParser      = require("body-parser"),
+      mongoose        = require("mongoose"),
+      flash           = require("connect-flash"),
+      passport        = require("passport"),
+      localStrategy   = require("passport-local"),
+      methodOverride  = require("method-override"),
+      sanitizer       = require("express-sanitizer"),
+      User            = require("./models/user");
+      //seedDB          = require("./seeds");
 
 require("dotenv").config()
 
