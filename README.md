@@ -10,7 +10,7 @@ Browse the comments on campsites and add your own!
 ***
 
 ## Final Project
-https://agile-caverns-31769.herokuapp.com/
+https://campthegrounds.herokuapp.com
 
 ***
 
