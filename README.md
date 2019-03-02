@@ -37,5 +37,8 @@ https://campthegrounds.herokuapp.com
 ### Main View:
 ![Main](readme_images/campgrounds-1.png)
 
+### Mobile View:
+![Mobile](readme_images/campgrounds-2.png)
+
 ### Campground Details
-![Campground Details](readme_images/campgrounds-2.png)
+![Campground Details](readme_images/campgrounds-3.png)

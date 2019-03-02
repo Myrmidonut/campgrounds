@@ -17,15 +17,16 @@
           <button class="btn btn-danger">Delete</button>
         </form>
       <% } %>
+
+      <div class="text-right">
+        <a class="btn btn-warning" href="/campgrounds/<%= campground._id %>/comments/new">Add new comment</a>
+      </div>
+
     </div>
   </div>
   
   <div class="well">
-    <div class="text-right">
-      <a class="btn btn-success" href="/campgrounds/<%= campground._id %>/comments/new">Add new comment</a>
-    </div>
     
-    <hr>
     
     <% campground.comments.forEach(function(comment) { %>
       <div class="row">
