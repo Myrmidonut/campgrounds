@@ -11,6 +11,13 @@ body {
 
 #landing-header h1 {
   color: #fff;
+  text-shadow: 
+    1px 0 0 #000,
+    0 -1px 0 #000,
+    0 1px 0 #000,
+    -1px 0 0 #000;
+  font-size: 3.5rem;
+  margin-bottom: 3.5rem;
 }
 
 .slideshow { 
@@ -42,18 +49,22 @@ body {
 .slideshow li:nth-child(1) { 
   background-image: url(../images/landing/landing1s.jpg) 
 }
+
 .slideshow li:nth-child(2) { 
   background-image: url(../images/landing/landing2s.jpg);
   animation-delay: 10s; 
 }
+
 .slideshow li:nth-child(3) { 
   background-image: url(../images/landing/landing3s.jpg);
   animation-delay: 20s; 
 }
+
 .slideshow li:nth-child(4) { 
   background-image: url(../images/landing/landing4s.jpg);
   animation-delay: 30s; 
 }
+
 .slideshow li:nth-child(5) { 
   background-image: url(../images/landing/landing5s.jpg);
   animation-delay: 40s; 
@@ -64,13 +75,16 @@ body {
     opacity: 0; 
     animation-timing-function: ease-in;
   }
+
   10% {
     opacity: 1;
     animation-timing-function: ease-out;
   }
+
   20% {
     opacity: 1
   }
+
   30% {
     opacity: 0
   }
